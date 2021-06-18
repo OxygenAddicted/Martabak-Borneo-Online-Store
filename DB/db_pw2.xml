@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Jun 18, 2021 at 03:08 PM
+- Server version: 10.4.19-MariaDB
+- PHP Version: 8.0.7
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="db_pw2" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="testing2">
+                CREATE TABLE `testing2` (
+                  `id` int(3) NOT NULL,
+                  `user_id` int(21) NOT NULL,
+                  `product` varchar(33) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+                  `user_id` bigint(20) NOT NULL,
+                  `username` varchar(32) NOT NULL,
+                  `password` varchar(32) NOT NULL,
+                  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'db_pw2'
+    -->
+    <database name="db_pw2">
+        <!-- Table testing2 -->
+        <!-- Table users -->
+        <table name="users">
+            <column name="id">1</column>
+            <column name="user_id">78687419423759</column>
+            <column name="username">alimamul</column>
+            <column name="password">testes123</column>
+            <column name="date">2021-06-16 12:44:43</column>
+        </table>
+        <table name="users">
+            <column name="id">2</column>
+            <column name="user_id">558832254342390037</column>
+            <column name="username">alimamul</column>
+            <column name="password">testes123</column>
+            <column name="date">2021-06-16 14:51:47</column>
+        </table>
+    </database>
+</pma_xml_export>
