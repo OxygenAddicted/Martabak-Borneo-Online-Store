@@ -2,6 +2,6 @@
 
 **Nama  : Al Imamul Luthfi**  
 **NIM   : 201401032**  
-**KOM   : A**
+**KOM   : A**  
 **Lab   : Praktikum Pemrograman Web I 2**  
-**Aslab : Altaha**  
+**Aslab : Altaha**
